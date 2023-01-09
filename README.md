@@ -94,34 +94,34 @@ All Lots:
 
 ![All lots](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_AllLots.png)
 
-The true mean of the sample is 1498.78. The p value is 0.06, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of all the lots combined is statistically similar to the population mean of 1500.
+*The true mean of the whole sample is 1498.78. The p value is 0.06, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of all the lots combined is statistically similar to the population mean of 1500.*
 
 Lot 1:
 
 ![Lot 1](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot1.png)
 
-Lot 1 has the true sample mean of 1500. The p value is 1, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of lot 1 is statistically similar to the population mean of 1500.
+*Lot 1 has the true sample mean of 1500. The p value is 1, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of lot 1 is statistically similar to the population mean of 1500.*
 
 Lot 2:
 
 ![Lot 2](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot2.png)
 
-Lot 2 has a sample mean of 1500.02. The p value is 0.61, which is over the significance level of 0.05 which means that the null hypothesis cannot be rejected and the mean of lot 2 is statistically similar to the population mean of 1500.
+*Lot 2 has a sample mean of 1500.02. The p value is 0.61, which is over the significance level of 0.05 which means that the null hypothesis cannot be rejected and the mean of lot 2 is statistically similar to the population mean of 1500.*
 
 Lot 3:
 
 ![Lot 3](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot3.png)
 
-Lot 3 has a sample mean of 1496.14. The p value is .04, which is under the significance level of 0.05. This means that the null hypothesis can be rejected and the mean of lot 3 is not statistically similar to the population mean of 1500.
+*Lot 3 has a sample mean of 1496.14. The p value is .04, which is under the significance level of 0.05. This means that the null hypothesis can be rejected and the mean of lot 3 is not statistically similar to the population mean of 1500.*
 
 ## Study Design: MechaCar vs Competition
 
 A statistical study that could be conducted against MechaCar and its competition could include important factors such as cost, fuel efficiency, maintenance cost, and safety ratings.
 
-What metric or metrics are you going to test? I would test how MechaCar compares to competitors in regard to overall cost (initial cost, fuel cost, and maintenance) and the overall safety rating.
+What metric or metrics are you going to test? **I would test how MechaCar compares to competitors in regard to overall cost (initial cost, fuel cost, and maintenance) and the overall safety rating.**
 
-What is the null hypothesis or alternative hypothesis? The Null Hypothesis is that MechaCar's overall pricing and safety ratings are in line with its competitors.
+What is the null hypothesis or alternative hypothesis? **The Null Hypothesis is that MechaCar's overall pricing and safety ratings are in line with its competitors.**
 
-What statistical test would you use to test the hypothesis? And why? A multiple linear regression test because I would be testing how strong the correlation is between several variables. Multiple linear regression would show how the variables impact the safety ratings and what factors have the highest correlation with selling price and overall cost.
+What statistical test would you use to test the hypothesis? And why? **A multiple linear regression test because I would be testing how strong the correlation is between several variables. Multiple linear regression would show how the variables impact the safety ratings and what factors have the highest correlation with selling price and overall cost.**
 
-What data is needed to run the statistical test? A random sample of safety ratings, sales price, fuel cost, and maintenance cost would need to be collected from MechaCar and their competitors.
+What data is needed to run the statistical test? **A random sample of safety ratings, sales price, fuel cost, and maintenance cost would need to be collected from MechaCar and their competitors.**
