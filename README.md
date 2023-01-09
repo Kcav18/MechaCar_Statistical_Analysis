@@ -2,17 +2,21 @@
 
 ## Overview
 
-A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on me, Jeremy, and the data analytics team to review the production data for insights that may help the manufacturing team.
 
-In this challenge, you’ll help Jeremy and the data analytics team do the following:
+In this challenge, I helped Jeremy and the data analytics team do the following:
 
-Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.
-Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.
-Run t-tests to determine if the manufacturing lots are statistically different from the mean population.
-Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+- Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.
+- Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.
+- Run t-tests to determine if the manufacturing lots are statistically different from the mean population.
+- Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
 
-## Linear Regression to Predict MPG
+## Results
 
+## Linear Regression to Predict MPG: 
+*Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.*
+
+**Results from Linear Regression:**
 ```
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
@@ -52,20 +56,22 @@ Is the slope of the linear model considered to be zero? Why or why not?
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ## Summary Statistics on Suspension Coils
+**Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.**
 
-```
-#Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
-total_summary <- Suspension_Coil %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
-view(total_summary)
+Total Summary:
 
-#Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
-lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI),Median = median(PSI), Variance = var(PSI), SD = sd(PSI) , .groups = 'keep')
-view(lot_summary)
-```
+![Total Summary](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/Total_Summary_SuspensionCoil.png)
+
+Lot Summary:
+
+![Lot Summary](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/Lot_Summary_SuspensionCoil.png)
+
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 ## T-Tests on Suspension Coils
+*Run t-tests to determine if the manufacturing lots are statistically different from the mean population.*
 
+The code used to perform the T-Tests is below:
 ```
 # T-Tests on Suspension Coils - all lots
 t.test(Suspension_Coil$PSI, mu=1500)
@@ -82,23 +88,25 @@ t.test(Lot_2$PSI, mu=1500)
 Lot_3 <- Suspension_Coil[which(Suspension_Coil$Manufacturing_Lot =='Lot3'),]
 t.test(Lot_3$PSI, mu=1500)
 ```
-Results:
+**Results of T-Tests:**
 
 All Lots:
 
-![All lots]()
+![All lots](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_AllLots.png)
 
 Lot 1:
 
-![Lot 1]()
+![Lot 1](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot1.png)
 
 Lot 2:
 
-![Lot 2]()
+![Lot 2](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot2.png)
 
 Lot 3:
 
-![Lot 3]()
+![Lot 3](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot3.png)
+
+In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
 ## Study Design: MechaCar vs Competition
 
