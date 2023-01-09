@@ -53,7 +53,7 @@ Which variables/coefficients provided a non-random amount of variance to the mpg
 
 Is the slope of the linear model considered to be zero? Why or why not? **The slope of the linear model is not considered to be zero because the p-value is much smaller than the assumed significance level (.05%). Therefore, the null hypothesis is rejected.**
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? **Yes, this linear model predicts mpg of MechaCar prototypes effectively. The r-squared value of .7149 means that 71% of all mpg predictions will be determined correctly by this model.
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? **Yes, this linear model predicts mpg of MechaCar prototypes effectively. The r-squared value of .7149 means that 71% of all mpg predictions will be determined correctly by this model.**
 
 ## Summary Statistics on Suspension Coils
 **Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.**
