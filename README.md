@@ -49,11 +49,11 @@ Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 ```
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? **The vehicle length and ground clearance provide non-random amounts of variance to the MPG values in the dataset. The p-value for vehicle length is 2.60e-12 and the p-value for ground clearance is 5.21-08**
 
-Is the slope of the linear model considered to be zero? Why or why not?
+Is the slope of the linear model considered to be zero? Why or why not? **The slope of the linear model is not considered to be zero because the p-value is much smaller than the assumed significance level (.05%). Therefore, the null hypothesis is rejected.**
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? **Yes, this linear model predicts mpg of MechaCar prototypes effectively. The r-squared value of .7149 means that 71% of all mpg predictions will be determined correctly by this model.
 
 ## Summary Statistics on Suspension Coils
 **Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.**
@@ -66,7 +66,7 @@ Lot Summary:
 
 ![Lot Summary](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/Lot_Summary_SuspensionCoil.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not? **When looking at all lots combined, manufacturing is meeting the specifications as the variance is below 100 psi. But when looking at the lots individually, we can see that lot 3 is not meeting the specifications. Lot 3 has a variance of 170.29 psi, which exceeds the 100 psi max variance specification.**
 
 ## T-Tests on Suspension Coils
 *Run t-tests to determine if the manufacturing lots are statistically different from the mean population.*
@@ -94,30 +94,34 @@ All Lots:
 
 ![All lots](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_AllLots.png)
 
+The true mean of the sample is 1498.78. The p value is 0.06, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of all the lots combined is statistically similar to the population mean of 1500.
+
 Lot 1:
 
 ![Lot 1](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot1.png)
+
+Lot 1 has the true sample mean of 1500. The p value is 1, which is over the significance level of 0.05. This means that the null hypothesis cannot be rejected and the mean of lot 1 is statistically similar to the population mean of 1500.
 
 Lot 2:
 
 ![Lot 2](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot2.png)
 
+Lot 2 has a sample mean of 1500.02. The p value is 0.61, which is over the significance level of 0.05 which means that the null hypothesis cannot be rejected and the mean of lot 2 is statistically similar to the population mean of 1500.
+
 Lot 3:
 
 ![Lot 3](https://github.com/Kcav18/MechaCar_Statistical_Analysis/blob/main/TTest_Lot3.png)
 
-In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+Lot 3 has a sample mean of 1496.14. The p value is .04, which is under the significance level of 0.05. This means that the null hypothesis can be rejected and the mean of lot 3 is not statistically similar to the population mean of 1500.
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+A statistical study that could be conducted against MechaCar and its competition could include important factors such as cost, fuel efficiency, maintenance cost, and safety ratings.
 
-In your description, address the following questions:
+What metric or metrics are you going to test? I would test how MechaCar compares to competitors in regard to overall cost (initial cost, fuel cost, and maintenance) and the overall safety rating.
 
-What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis? The Null Hypothesis is that MechaCar's overall pricing and safety ratings are in line with its competitors.
 
-What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why? A multiple linear regression test because I would be testing how strong the correlation is between several variables. Multiple linear regression would show how the variables impact the safety ratings and what factors have the highest correlation with selling price and overall cost.
 
-What statistical test would you use to test the hypothesis? And why?
-
-What data is needed to run the statistical test?
+What data is needed to run the statistical test? A random sample of safety ratings, sales price, fuel cost, and maintenance cost would need to be collected from MechaCar and their competitors.
